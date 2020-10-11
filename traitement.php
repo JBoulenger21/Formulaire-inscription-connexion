@@ -57,11 +57,13 @@ function checkEmail($email){
 }
 
 function checkPassword($password, $passwordVerif){
-  // if(preg_match('/(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/', $password) && $password == $passwordVerif){
+  echo $password;
+  echo $passwordVerif;
+  if(preg_match('/(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/', $password) && $password == $passwordVerif){
     return 1;
-  // }else{
-  //   return 'Mot de passe non valide';
-  // }
+  }else{
+    return 'Mot de passe non valide';
+  }
 }
 
 function check($input){

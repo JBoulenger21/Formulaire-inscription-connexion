@@ -13,7 +13,7 @@ try{
   die('erreur :'.$e->getMessage());
 }
 //créer table si non existante
-$query = "CREATE TABLE IF NOT EXISTS `user` (
+$query = "CREATE TABLE IF NOT EXISTS `Service` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT ,
   `mail` VARCHAR(50) NOT NULL ,
   `password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
